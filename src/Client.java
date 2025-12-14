@@ -183,9 +183,6 @@ public class Client {
                  case 16:
                     System.out.println("Unit 16!");
                     break;
-                 case 17:
-                    System.out.println("You have completed all units! It's recommended that you take the quiz.");
-                    break;
             }
             //delay for time to read
             Thread.sleep(1000);
@@ -208,7 +205,6 @@ public class Client {
             System.out.println("Unit 14 (14) Register");
             System.out.println("Unit 15 (15) Counter");
             System.out.println("Unit 16 (16) RAM");
-            System.out.println("Quiz (Q)");
             System.out.println("Log Out (X)");
 
             //scan input
@@ -277,9 +273,6 @@ public class Client {
                 case "16":
                     learning.unit16(scan);
                     unitscompleted.add(input);
-                    break;
-                case "Q":
-                    learning.quiz1(scan);
                     break;
                 case "X":
                     System.out.println("Logging out...");
